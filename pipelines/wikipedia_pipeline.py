@@ -106,10 +106,9 @@ def write_wikipedia_data(**kwargs):
                  + "_" + str(datetime.now().time()).replace(":", "_") + '.csv')
 
     #data.to_csv('data/' + file_name,index=False)
-    # wxK+XdAdD2aPEuDx8+n+N5OJwLqtRq9r7s+N48+WSqC0TNDxHjYs/6D+WR896j3RQii6BWwU6rbF+ASttOXrRg==
     data.to_csv('abfs://footballdataeng@footballdata2025as.dfs.core.windows.net/data/' + file_name ,
                 storage_options={
-                    'account_key': 'wxK+XdAdD2aPEuDx8+n+N5OJwLqtRq9r7s+N48+WSqC0TNDxHjYs/6D+WR896j3RQii6BWwU6rbF+ASttOXrRg==',
+                    'account_key': '**',
 
                 }, index=False)
 
