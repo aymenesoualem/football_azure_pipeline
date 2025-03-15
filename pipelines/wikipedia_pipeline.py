@@ -1,4 +1,4 @@
-
+import os
 import json
 import pandas as pd
 import geocoder
@@ -108,7 +108,7 @@ def write_wikipedia_data(**kwargs):
     #data.to_csv('data/' + file_name,index=False)
     data.to_csv('abfs://footballdataeng@footballdata2025as.dfs.core.windows.net/data/' + file_name ,
                 storage_options={
-                    'account_key': '**',
+                    'account_key': os.getenv("ACCOUNT_KEY"),
 
                 }, index=False)
 
