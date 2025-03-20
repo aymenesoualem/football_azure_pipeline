@@ -106,9 +106,9 @@ def write_wikipedia_data(**kwargs):
                  + "_" + str(datetime.now().time()).replace(":", "_") + '.csv')
 
     #data.to_csv('data/' + file_name,index=False)
-    data.to_csv('abfs://footballdataeng@footballdata2025as.dfs.core.windows.net/data/' + file_name ,
+    data.to_csv('abfs://footballdatacontainer@footballdataengsa.dfs.core.windows.net/data/' + file_name ,
                 storage_options={
-                    'account_key': os.getenv("ACCOUNT_KEY"),
+                    'account_key': '****',
 
                 }, index=False)
 
